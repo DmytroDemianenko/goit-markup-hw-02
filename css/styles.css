@@ -5,8 +5,8 @@
   --main-font: "Roboto", sans-serif;
   --accent-font: "Raleway", sans-serif;
   --title-color: #212121;
-  --button-color: #f5f4fa;
-  --button-active: #2196f3;
+  --button-background: #f5f4fa;
+  --button-background-active: #2196f3;
 }
 
 * {
@@ -26,19 +26,21 @@
 ul {
   list-style: none;
 }
-.order {
+.container > .order {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   padding: 10px 32px;
   letter-spacing: 0.06em;
   color: #212121;
-  background-color: var(--button-color);
+  background-color: var(--button-background);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
 }
-.order:hover {
-  background-color: var(--button-active);
+.container > .order:hover,
+.container > .order:focus {
+  background-color: var(--button-background-active);
   color: var(--white-color);
 }
 a {
@@ -49,10 +51,17 @@ p {
   font-family: var(--main-font);
   font-size: 14px;
 }
-h2 h3 {
+h2,
+h3 {
   color: var(--title-color);
   font-family: var(--main-font);
   font-size: 14px;
+}
+
+/* body styles */
+body {
+  font-family: var(--main-font);
+  color: var(--text-color);
 }
 /* heder styles */
 .nav-list a:hover {
@@ -64,17 +73,18 @@ h2 h3 {
 .active {
   color: var(--active-color);
 }
-/* body styles */
-body {
-  font-family: var(--main-font);
+.contacts {
 }
+/* Section Hero */
 .hero {
   background-color: #2f303a;
   height: 600px;
+  padding: 200 auto 280;
 }
 h1 {
   color: var(--white-color);
 }
+/* Portfolio */
 .our-products {
   width: 1170px;
   margin-left: auto;
@@ -93,4 +103,23 @@ h1 {
   margin-right: auto;
   padding: 0;
 }
+.products-list,
+.title {
+  font-size: 18px;
+}
 /* footer styles */
+
+/* Button */
+.button-list {
+  color: var(--title-color);
+  background-color: var(--button-background);
+  cursor: pointer;
+}
+.button-list .button:hover {
+  color: var(--white-color);
+  background-color: var(--button-background-active);
+}
+.button-list .button:focus {
+  color: var(--white-color);
+  background-color: var(--button-background-active);
+}
