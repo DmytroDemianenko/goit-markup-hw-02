@@ -32,14 +32,9 @@ a:active {
   color: var(--active-color);
 }
 
-p {
-  color: var(--text-color);
-  font-family: var(--main-font);
-}
 h2,
 h3 {
   color: var(--title-color);
-  font-family: var(--main-font);
 }
 
 /* body styles */
