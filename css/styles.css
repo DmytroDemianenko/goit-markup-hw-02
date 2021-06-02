@@ -188,6 +188,7 @@ body {
 }
 /* Footer */
 .foot {
+font-style: none;
   text-decoration-style: normal;
   color: var(--white-color);
   background-color: #000000;
