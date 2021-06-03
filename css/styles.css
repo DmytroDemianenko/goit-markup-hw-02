@@ -197,7 +197,10 @@ h3 {
 .footer-list .text {
   font-style: normal;
 }
-.footer-list .link {
+/* .footer-list .link {
+  
+} */
+.adress {
   font-style: normal;
   color: #ffffff99;
   font-family: var(--main-font);
