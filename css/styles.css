@@ -197,10 +197,8 @@ h3 {
 .footer-list .text {
   font-style: normal;
 }
-/* .footer-list .link {
-  
-} */
-.adress {
+
+.contacts {
   font-style: normal;
   color: #ffffff99;
   font-family: var(--main-font);
