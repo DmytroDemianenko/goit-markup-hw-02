@@ -7,14 +7,13 @@
   --title-color: #212121;
   --button-background: #f5f4fa;
   --button-background-active: #2196f3;
+  --back-dark: #2f303a;
 }
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 /* body styles */
 body {
   background-color: var(--white-color);
@@ -33,62 +32,56 @@ body {
 ul {
   list-style: none;
 }
-
 a {
   text-decoration: none;
 }
-
 a:active {
   color: var(--active-color);
 }
-
 h2,
 h3 {
   color: var(--title-color);
 }
-
-/* heder styles */
+/* HEDER STYLES */
 .logo {
-  color: #2196f3;
+  color: var(--active-color);
 }
-
 .logo-item {
   color: #000000;
 }
 .logo-item-foot {
   color: var(--white-color);
 }
-.logo,
-.logo-item,
-.logo-item-foot {
+.logo-link {
   font-family: var(--accent-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.92em;
   letter-spacing: 0.03em;
 }
-.nav-list a:hover,
-.nav-list a:focus,
-.nav-list .current {
+.nav a:hover,
+.nav a:focus,
+.nav .current {
   color: var(--active-color);
 }
-.nav-list {
+.nav-list-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.43em;
   letter-spacing: 0.02em;
-}
-.nav-link {
   color: var(--title-color);
 }
-.nav-list-contacts .link {
+.contacts-list-link {
+  font-style: normal;
   color: inherit;
 }
-
-/* Section Hero */
+.contacts-list-link:hover,
+.contacts-list-link:focus {
+  color: var(--active-color);
+}
+/* HERO SECTION */
 .hero {
-  background-color: #2f303a;
-  /* width: 1170; */
+  background-color: var(--back-dark);
   height: 600px;
   padding: 200 auto 280;
 }
@@ -99,6 +92,9 @@ h3 {
   letter-spacing: 0.06em;
   text-align: center;
 }
+.hero pre::first-letter {
+  text-transform: uppercase;
+}
 /* Section container advantages */
 .caption-title {
   font-weight: 700;
@@ -106,6 +102,9 @@ h3 {
   line-height: 1.17em;
   letter-spacing: 0.03em;
   color: var(--title-color);
+}
+.caption-title pre::first-letter {
+  text-transform: uppercase;
 }
 /* Чем мы занимаемся */
 .heading {
@@ -191,15 +190,13 @@ h3 {
 /* Footer */
 
 .foot {
-  background-color: #000000;
+  background-color: var(--back-dark);
   color: var(--white-color);
 }
-.footer-list .text {
+.contacts-list-foot > li {
   font-style: normal;
 }
-
-.contacts {
-  font-style: normal;
+.contacts-list-foot .link {
+  /* color: rgba(255, 255, 255, 0.6); */
   color: #ffffff99;
-  font-family: var(--main-font);
 }
