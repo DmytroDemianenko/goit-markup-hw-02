@@ -128,7 +128,6 @@ h3 {
 
 /* Portfolio */
 .our-products {
-  /* width: 1170px; */
   margin-left: auto;
   margin-right: auto;
   padding: 0;
@@ -164,8 +163,8 @@ h3 {
   background-color: var(--button-background-active);
   cursor: pointer;
 }
-.link:hover:hover,
-.link:focus:focus {
+.link:hover,
+.link:focus {
   color: var(--active-color);
 }
 .visual-hiden {
@@ -197,6 +196,9 @@ h3 {
   font-style: normal;
 }
 .contacts-list-foot .link {
-  /* color: rgba(255, 255, 255, 0.6); */
   color: #ffffff99;
+}
+.contacts-list-foot a:hover,
+.contacts-list-foot a:focus {
+  color: var(--active-color);
 }
