@@ -8,6 +8,8 @@
   --button-background: #f5f4fa;
   --button-background-active: #2196f3;
   --back-dark: #2f303a;
+  --foot-contact-text: rgba(255, 255, 255, 0.6);
+  --back-color-order: #188ce8;
 }
 * {
   box-sizing: border-box;
@@ -24,7 +26,7 @@ body {
   letter-spacing: 0.03em;
 }
 .container {
-  width: 1170px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
@@ -56,7 +58,7 @@ h3 {
   font-family: var(--accent-font);
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.92em;
+  line-height: 1.19em;
   letter-spacing: 0.03em;
 }
 .nav a:hover,
@@ -67,11 +69,12 @@ h3 {
 .nav-list-link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.43em;
+  line-height: 1.14em;
   letter-spacing: 0.02em;
   color: var(--title-color);
 }
 .contacts-list-link {
+  line-height: 1.14em;
   font-style: normal;
   color: inherit;
 }
@@ -88,7 +91,7 @@ h3 {
 .main-title {
   color: var(--white-color);
   font-size: 44px;
-  line-height: 1.363em;
+  line-height: 1.36em;
   letter-spacing: 0.06em;
   text-align: center;
 }
@@ -133,13 +136,7 @@ h3 {
   padding: 0;
 }
 .advantages {
-  width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-}
-.what-we-do {
-  /* width: 1170px; */
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
